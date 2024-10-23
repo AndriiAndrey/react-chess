@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board:hover {
+  cursor: pointer;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.black {
+  background-color: deepskyblue;
+}
+
+.white {
+  background-color: #eed4ac;
+}
+
+.selected {
+  background-color: rgb(207, 13, 213);
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgb(27, 147, 53);
+}
+
+.lost {
+  height: 50%;
+  padding: 30px;
+  width: 180px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.lost-item {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.check-status {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.check-status-msg {
+  font-size: 24px;
+  font-weight: bold;
+  color: crimson;
+}
